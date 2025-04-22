@@ -31,11 +31,10 @@ function BodyTabs () {
   return (
     <Tab.Group defaultIndex={0}>
       <div className="container mx-auto">
-      <Tab.List className='justify-center text-md md:text-2xl lg:text-4xl font-semibold leading-none grid grid-cols-2 py-[15px]'>
+      <Tab.List className='justify-center text-md md:text-2xl font-semibold leading-none grid grid-cols-2 py-[15px]'>
         { itemsGroup.map((item, i)=> (
           <Tab key={i} className='uppercase whitespace-pre-line text-[#6d6e71] hover:text-[#333] ui-selected:text-[#333] xl:px-[20%] xl:py-[20px] font-gotham first:border-r-4 border-[#58595b] focus-visible:outline-0 cursor-pointer'>
             {item.contestLabel}
-            <p className='font-DBHeavent font-normal leading-[0.8] md:leading-tight text-[14px] md:text-[20px] mt-1 md:mt-0 md:text-2xl'>หมวด {item.contestDesc}</p>
           </Tab>
         ))}
       </Tab.List>
