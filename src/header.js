@@ -18,7 +18,7 @@ function header () {
       <picture>
         <source media='(max-width: 520px)' srcSet={MBanner}/>
         <source media='(max-width: 820px)' srcSet={TBanner}/>
-        <img src={DBanner} alt="AssetWise Photos Contest Exhibition 2023" className='w-full mx-auto lg:w-auto xl:w-[1520px]'/>
+        <img src={DBanner} alt="AssetWise Photos Contest Exhibition 2023" className='w-full'/>
       </picture>
     </header>
   );
